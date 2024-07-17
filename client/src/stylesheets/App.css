@@ -1,0 +1,528 @@
+/* Add your CSS here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-title {
+    margin: 0;
+    display: inline-block;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.main-container {
+    display: flex;
+    /*justify-content: space-between; dont touch this throws off both pages*/
+}
+
+.sidebar {
+    background-color: #e1e1e1;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    /* This stacks the children elements vertically */
+    padding: 0;
+    list-style-type: none;
+    /* Removes default list styling */
+    width: 100%;
+    /* Adjust width as necessary */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    /* This stacks the children elements vertically */
+    padding: 0;
+    list-style-type: none;
+    /* Removes default list styling */
+    width: 100%;
+    /* Adjust width as necessary */
+}
+
+.tabs {
+    padding: 20px;
+    border: none;
+    background: none;
+    color: #0e7ace;
+}
+
+#tagTab {
+    border-radius: 25px;
+    background-color: none;
+}
+
+#questionTab {
+    border-radius: 25px;
+    background-color: rgb(182, 175, 175);
+    /* background-color: yellow; */
+}
+
+#profileTab {
+    border-radius: 25px;
+    background-color: none;
+}
+
+
+.questions-section {
+    display: inline-block;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 1px solid #dcdcdc;
+    overflow: auto;
+    /* Adds scroll if content overflows */
+}
+
+.questions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e8e8e8;
+}
+
+.ask-question {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.question-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    /* Ensures there is a separation line */
+}
+
+.total-questions {
+    font-weight: bold;
+}
+
+.question-filters {
+    display: flex;
+}
+
+.question {
+    display: flex;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px dotted #ccc;
+    margin-top: 10px;
+    justify-content: first baseline;
+    /* Adds space between the question and the filters */
+}
+
+.question-info {
+    font-size: 0.9em;
+    color: #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    /* Adds some space between the info and the question title */
+    width: 100px;
+}
+
+.titleAndTags {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.question-title {
+    color: #0e7ace;
+    margin: 10px 0;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.question-text {
+    flex: 1;
+}
+
+.question-tags {
+    justify-content: space-between;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eef;
+    border: 1px solid #dde;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.question-meta {
+    float: right;
+    font-size: 0.8em;
+    color: #707070;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.question,
+.questions {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.questions input[type="text"] {
+    width: 25%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+}
+
+.additional-info {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+    /* Add margin to separate it from the input */
+}
+
+.red-asker {
+    color: red;
+}
+
+.question-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-view-title {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#answer-question {
+    background-color: #0e7ace;
+    height: 30px;
+    width: 150px;
+}
+
+.answer-and-title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.views-and-text {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #060505;
+
+}
+
+
+.question-view-ask-question {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.question-view-answer {
+    border: dotted;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.question-answered-by {
+    margin: 5px;
+    float: right;
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 250px;
+    /* initial size of the element */
+}
+
+.mixer {
+    margin: 5px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-and-tags {
+    flex: 1;
+}
+
+.answer-text {
+    margin: 5px;
+}
+
+.answerer {
+    color: green;
+}
+
+.tag-block-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-row {
+    display: flex;
+}
+
+.tag-block {
+    width: 33.3%;
+    text-align: center;
+    border: dotted;
+    margin: 20px;
+}
+
+.tags-header {
+    display: flex;
+}
+
+.tags-ask-question {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+}
+
+.all-tags {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.total-tags {
+    font-weight: bold;
+}
+
+.mandatory-fields-indicator {
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    color: red;
+}
+
+.button-container {
+    display: inline-flex;
+    /* Display children inline */
+    align-items: center;
+    /* Align children vertically */
+}
+
+.tag-name {
+    border: none;
+    background: none;
+    font-size: larger;
+    color: #0074cc;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ask-question-form-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 20px;
+    /* Adjust the value as needed */
+}
+
+.ask-question-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* #questions-tags-container {
+    display: flex;
+} */
+
+#tagspage {
+    align-items: center;
+    display: inline;
+    justify-content: space-between;
+}
+
+.logout-button {
+    background-color: #0074cc;
+    color: white;
+    float: right;
+}
+
+.ans-and-views {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-weight: bold;
+}
+
+.vote-buttons {
+    width: 100px;
+}
+
+.page-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.page-btns button {
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    /* Light gray border */
+    width: 75%;
+    /* 3/4 width of the parent container */
+    margin: 0 auto;
+    /* Center the div */
+    padding: 10px;
+    /* Add some padding */
+    font-size: 0.9em;
+    /* Smaller font size */
+}
+
+.comment-metadata {
+    color: #777;
+    /* Gray color for metadata */
+}
+
+.comment p {
+    margin: 0;
+    /* Remove extra margin */
+    line-height: 1.5;
+    /* Adjust line spacing for readability */
+}
+
+
+.admin-dashboard {
+    padding: 20px;
+    /* Padding around the admin dashboard */
+    font-family: Arial, sans-serif;
+    /* Consistent font-family */
+}
+
+.user-management {
+    margin-top: 20px;
+    /* Space between sections */
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    /* Ensure children are stacked vertically */
+    gap: 10px;
+    /* Space between user entries */
+}
+
+.user-entry {
+    border: 1px solid #ddd;
+    /* Light border */
+    padding: 10px;
+    /* Padding around each user entry */
+    background: #f9f9f9;
+    /* Light gray background */
+    border-radius: 5px;
+    /* Rounded corners */
+    display: flex;
+    /* Flex layout for internal content */
+    justify-content: space-between;
+    /* Space between name and delete button */
+    align-items: center;
+    /* Align items vertically */
+}
+
+.user-entry span {
+    cursor: pointer;
+    /* Cursor indicates clickable */
+}
+
+.user-entry span:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.user-entry button {
+    background: #ff4d4d;
+    /* Red background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 5px 10px;
+    /* Padding for delete button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor change to indicate action */
+}
+
+.user-entry button:hover {
+    background: #cc0000;
+    /* Darker red on hover */
+}
